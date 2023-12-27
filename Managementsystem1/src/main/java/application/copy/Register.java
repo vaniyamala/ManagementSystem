@@ -44,7 +44,7 @@ public class Register extends HttpServlet {
 	        
 	        out.println("<html><body>");
 	        out.println("<h2>Save Result</h2>");
-	        out.println("<p>" + rowsSaved + " row(s) saved.</p>");
+	        out.println("<p>" + rowsSaved + " row(s) saved in the database.</p>");
 	        out.println("</body></html>");
 
 	        // Close the PrintWriter

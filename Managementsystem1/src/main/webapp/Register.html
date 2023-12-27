@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Register</title>
+     <style>
+         body {
+             background-color:#D5F5E3; /* Beautiful background color */
+             font-family: Arial, sans-serif;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             height: 100vh;
+             margin: 0;
+         }
+
+         .form-container {
+             width: 300px;
+             background-color: #fff;
+             padding: 20px;
+             border-radius: 10px;
+             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+             margin-left: 30px;
+         }
+
+         form {
+             display: flex;
+             flex-direction: column;
+         }
+
+         label {
+             margin-bottom: 5px;
+             color: #333;
+         }
+
+         input {
+             padding: 8px;
+             margin-bottom: 10px;
+             border: 1px solid #ccc;
+             border-radius: 5px;
+         }
+
+         input[type="submit"] {
+             background-color: #E3F5D5  ;
+             color: black;
+             
+             cursor: pointer;
+         }
+
+         input[type="submit"]:hover {
+             background-color: #45a049;
+         }
+     </style>
+</head>
+<body>
+	<div class="form-container">
+	    <form action="Register" method="post">
+		    <label for="id">ID:</label>
+		    <input type="text" id="id" name="id" required>
+		
+		    <label for="name">Name:</label>
+		    <input type="text" id="name" name="name" required>
+		
+		    <label for="email">Email:</label>
+		    <input type="email" id="email" name="email" required>
+		
+		    <label for="department">Department:</label>
+		    <input type="text" id="department" name="department" required>
+		
+		    <label for="salary">Salary:</label>
+		    <input type="number" id="salary" name="salary" required>
+		
+		    <input type="submit" value="Submit">
+       </form>
+	</div>
+	<div class="form-container">
+        <form action="Update.html">
+            <!-- Your update form content here -->
+            <input type="submit" value="Click here to update">
+        </form>
+
+        <form action="Deleteid.html">
+            <!-- Your delete by id form content here -->
+            <input type="submit" value="Click here to delete by using id">
+        </form>
+
+        <form action="Deleteobj.html">
+            <!-- Your delete by object form content here -->
+            <input type="submit" value="Click here to delete by using object">		
+        </form>
+
+        <form action="showid.html">
+            <!-- Your show details by id form content here -->
+            <input type="submit" value="Click here to see the details of the employee">	
+        </form>
+
+        <form action="showall.html">
+            <!-- Your show all details form content here -->
+            <input type="submit" value="Click here to see the details of the employees">
+        </form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Delete-1</title>
+    <style>
+        body {
+            background-color: #f9f9f9; /* Light gray background color */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            width: 300px;
+            background-color: #fff; /* White background color */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        label {
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            background-color: #e74c3c; /* Red background color */
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #c0392b; /* Darker red on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <form action="Deleteid" method="post">
+        <h1>Enter Employee ID to Delete</h1>
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" required><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
